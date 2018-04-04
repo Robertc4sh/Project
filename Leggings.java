@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Leggings here.
  *
@@ -7,27 +7,14 @@
  */
 public class Leggings extends Armor
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Leggings
-     */
-    public Leggings()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public Leggings(){
+        super("Leggings");
+        int chance = (int)(Math.random() * 2);
+        if (chance == 1){
+            blocked = true;
+        }
+        else{
+            blocked = false;
+        }
     }
 }

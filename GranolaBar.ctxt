@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=GranolaBar
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GranolaBar\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=quantity
+comment1.target=GranolaBar(int)
+numComments=2

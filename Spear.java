@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Spear here.
  *
@@ -7,27 +7,16 @@
  */
 public class Spear extends Weapon
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Spear
-     */
-    public Spear()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    int durability;
+    public Spear(){
+        super("Spear", 5);
+        durability = 15;
+        int chance = (int)(Math.random() * 10);
+        if (chance <= 3){
+            parry = true;
+        }
+        else{
+            parry = false;
+        }
     }
 }

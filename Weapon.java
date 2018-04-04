@@ -1,23 +1,23 @@
-
+import java.util.ArrayList;
+import java.lang.Math;
 /**
  * Abstract class Weapon - write a description of the class here
  *
  * @author (your name here)
  * @version (version number or date here)
  */
-public abstract class Weapon extends Item
+public abstract class Weapon extends Item implements WeaponInterface
 {
-    int x;
-    int y;
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    int attack;
+    boolean parry;
+    public Weapon(String name, int attack){
+        super(name);
+        this.attack = attack;
+    }
+    public int attack(){
+        return attack;
+    }
+    public boolean parry(){
+        return parry;
     }
 }

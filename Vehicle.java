@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Vehicle here.
  *
@@ -7,27 +7,16 @@
  */
 public abstract class Vehicle extends Item
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    int seats;
+    double speed;
 
-    /**
-     * Constructor for objects of class Vehicle
-     */
-    public Vehicle()
-    {
-        // initialise instance variables
-        x = 0;
+    public Vehicle(String name, int seats, double speed){
+        super(name);
+        this.seats = seats;
+        this.speed = speed;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void moveForward(){
+        System.out.print("You move forward.");
     }
+    
 }

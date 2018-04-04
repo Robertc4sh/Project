@@ -5,29 +5,24 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Player
+public class Player extends Character
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Player
-     */
-    public Player()
-    {
-        // initialise instance variables
-        x = 0;
+    public Player(String name){
+        super(name, 100);
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void gainHealth(){
+        health += consumable.regen;
+        consumable.quantity -= 1;
+        System.out.println(consumable.quantity);
+        getHealth();
+        if (consumable.quantity == 0){
+            pack.useItem(consumable);
+        }
+    }
+
+    public void seeBackpack(){
+        System.out.println("Amount of items in backpack: " + pack.countItems());
+        System.out.println("Things in backpack: " + pack.getInventory());
     }
 }

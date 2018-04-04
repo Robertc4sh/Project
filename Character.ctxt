@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Character
+comment0.text=\r\n\ Write\ a\ description\ of\ interface\ CharacterInterface\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=name\ health
+comment1.target=Character(java.lang.String,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=int\ getHealth()
+comment4.params=
+comment4.target=int\ getDamage()
+comment5.params=
+comment5.target=int\ getEDamage()
+comment6.params=damage
+comment6.target=void\ takeDamage(int)
+numComments=7
